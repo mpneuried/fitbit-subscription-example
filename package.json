@@ -1,0 +1,36 @@
+{
+  "name": "fitbit-subscription-example",
+  "version": "0.0.1",
+  "description": "A example how to use the fitbit subscription api from node",
+  "main": "run.sh",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "fitbit-node": "^2.0.0",
+    "redis": "^2.6.0-1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run": "export $(cat test.env | grep -v '^#' | xargs); node test.js",
+    "rund": "export $(cat test.env | grep -v '^#' | xargs); node-dev test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mpneuried/fitbit-subscription-example.git"
+  },
+  "keywords": [
+    "fitbit",
+    "node",
+    "js",
+    "subscription",
+    "api"
+  ],
+  "author": "mpneuried",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpneuried/fitbit-subscription-example/issues"
+  },
+  "homepage": "https://github.com/mpneuried/fitbit-subscription-example#readme"
+}
